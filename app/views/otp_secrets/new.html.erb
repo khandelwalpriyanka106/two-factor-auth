@@ -1,0 +1,5 @@
+<%= form_tag otp_secrets_path, method: :post do %>
+  <%= hidden_field_tag :otp_secret %>
+  <%= image_tag @qr_code %>
+  <%= text_field_tag :otp_attempt %>
+<% end %>

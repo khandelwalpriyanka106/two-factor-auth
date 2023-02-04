@@ -1,0 +1,10 @@
+<%= form_with url: sign_in_path do |f| %>
+  <p>
+  <%= f.label 'OTP:'%><br>
+  <%= f.text_field :otp, id: 'otp_code' %>
+  </p>
+  <p>
+   <p>
+  <%= f.submit 'verify' %>
+  </p>
+<% end %>
